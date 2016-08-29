@@ -1,0 +1,9 @@
+@mixin pm-none {
+ margin: 0;
+ padding: 0;
+}
+
+@mixin center-block {
+  width: 1000px;
+  margin: 0 auto
+}

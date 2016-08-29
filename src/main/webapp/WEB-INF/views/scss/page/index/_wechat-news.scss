@@ -1,0 +1,225 @@
+html {
+  -webkit-text-size-adjust: none;
+}
+
+.page-group {
+  .page {
+    z-index: 10400;
+    background-color: #eee;
+    position: absolute;
+    width: 100%;
+    top:0;
+    .column {
+      .channel-container {
+        width: 100%;
+        padding: 0;
+        height: 2rem;
+        overflow: hidden;
+        -webkit-overflow-scrolling: touch;
+        overflow-x: scroll;
+        .channel-wrapper {
+          white-space: nowrap;
+          .channel-slide {
+            display: inline-block;
+            width: auto;
+            padding: 0rem 0.3rem;
+            font: normal 0.8rem/2rem "Microsoft YaHei";
+            a {
+              color: #333;
+            }
+            &.active a {
+              color: #0d5ebd;
+            }
+          }
+        }
+      }
+      .channel-container::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    .more {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 2rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      .icon-add {
+        display: block;
+        width: 20px;
+        height: 20px;
+        &:before {
+          content: '';
+          background: url(../../../img/add.png) no-repeat 1px center;
+          background-size: 0.8rem;
+          display: block;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      &:before {
+        content: '';
+        width: 12px;
+        height: 2rem;
+        background-color: rgba(242, 242, 242, .5);
+        position: absolute;
+        left: -0.5rem;
+      }
+    }
+    .content {
+
+      .preloader {
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+      }
+      .card-container {
+        .card {
+          margin: 0;
+          padding: 0 0.6rem;
+          box-shadow: 0 0;
+          border-radius: 0;
+          &:last-child {
+            .card-bottom {
+              border: 0 !important;
+            }
+          }
+          &:visited {
+            background-color: #f6f5f5;
+          }
+          .card-header {
+            padding: 0.5rem 0 0.3rem 0;
+            min-height: 1.1rem;
+            a {
+              font: normal 0.9rem/1.1rem "Microsoft YaHei";
+              display: block;
+              width: 100%;
+              color: #000;
+              &:visited {
+                color: #666;
+              }
+            }
+          }
+          .card-content {
+            .card-content-inner {
+              font: normal 0.7rem/0.9rem "Microsoft YaHei";
+              padding: 0;
+              p {
+                margin-bottom: 0.2rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                a {
+                  display: block;
+                  color: #666;
+                }
+              }
+            }
+          }
+          .card-bottom {
+            border-bottom: 1px solid #d9d9d9 !important;
+            min-height: 0.8rem;
+            box-sizing: content-box;
+            padding-bottom: 0.5rem;
+            color: #999;
+            font-size: 0.6rem;
+            .name {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+      .empty-data {
+        .nodata {
+          text-align: center;
+          p {
+            margin: 0.5rem 0 0 0;
+            font: normal 0.9rem/1.3rem "Microsoft YaHei";
+            color: #333;
+          }
+          span {
+            font: normal 0.7rem/1rem "Microsoft YaHei";
+            margin: 0;
+            color: #666;
+          }
+        }
+      }
+      .infinite-scroll-preloader {
+        display: none;
+        margin-bottom: 2.7rem;
+        line-height: 1rem;
+        color: #333;
+        .preloader {
+          margin-right: 2px;
+          width: 1rem;
+          height: 1rem;
+          vertical-align: -5px;
+        }
+      }
+      .loading-large {
+        p {
+          margin: 0.5em 0;
+          color: #666;
+        }
+      }
+    }
+    .bar-tab {
+      position: fixed;
+      height: 50px;
+      background-color: #f3f9ff;
+      border-top: 1px solid #dbe7f5;
+      -webkit-transform: translateY(0);
+      -webkit-transition: all .8s ease;
+      transition: all .8s ease;
+      .tab-item {
+        color: #333;
+        font-family: "Microsoft YaHei";
+        &.active {
+          color: #0d5ebd;
+        }
+        .weui_tabbar_icon {
+          padding: 0;
+          width: 1.8rem;
+          height: 0.75rem;
+          & ~ .weui_tabbar_label {
+            position: relative;
+            top: .15rem;
+            display: block;
+            font-size: .55rem;
+          }
+        }
+        .icon-news:before {
+          content: '';
+          background: url(../../../img/news.png) no-repeat left center;
+          background-size: 1rem 0.85rem;
+          display: block;
+          width: 1rem;
+          height: 18px;
+          margin: 0 auto;
+        }
+        .icon-report:before {
+          content: '';
+          background: url(../../../img/report.png) no-repeat left center;
+          background-size: 0.85rem 1rem;
+          display: block;
+          width: 0.85rem;
+          height: 18px;
+          margin: 0;
+          margin: 0 auto;
+        }
+        &.weui_bar_item_on .icon-news:before {
+          background: url(../../../img/news-on.png) no-repeat left center;
+          background-size: 1rem 0.85rem;
+        }
+        &.active .icon-report:before {
+          background: url(../../../img/report-on.png) no-repeat left center;
+          background-size: 0.85rem 1rem;
+        }
+      }
+    }
+    .bar-tab-hide {
+      -webkit-transform: translateY(100%);
+    }
+  }
+}

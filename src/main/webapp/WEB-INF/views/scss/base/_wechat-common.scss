@@ -1,0 +1,98 @@
+.exception {
+  position: absolute;
+  width: 100%;
+  padding-top: 6rem;
+  height: auto;
+  .vertical-center {
+    text-align: center;
+    font: normal 12px/18px 'Microsoft Yi Baiti';
+    color: #333;
+  }
+}
+
+.no-list-tips {
+  padding-top: 10px;
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  padding-bottom: 70px;
+}
+
+.noweb {
+  text-align: center;
+  img {
+    margin-top: 4.675rem;
+  }
+  p {
+    margin: 0 auto;
+    font: normal 0.8rem/1rem "Microsoft YaHei";
+    width: 74%;
+    a {
+      color: #0d5ebd;
+    }
+  }
+}
+
+.weui-infinite-scroll {
+  display: none;
+  margin-bottom: 2.7rem;
+}
+
+.loading-error {
+  padding-top: 40px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.loading-error .icon-error {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(../../img/icon-error.png) no-repeat;
+  background-size: 24px;
+  vertical-align: -7px;
+  margin-right: 4px;
+}
+
+.error-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  p {
+    font: normal 18px/18px 'Microsoft YaHei';
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10600;
+  width: 100%;
+  height: calc(100% - (50px));
+  height: -webkit-calc(100% - (50px));
+  opacity: 0;
+  -webkit-transition-duration: .4s;
+  -o-transition-duration: .4s;
+  transition-duration: .4s;
+  visibility: visible;
+  background: 0 0;
+}
+
+.pull-right {
+  float: right;
+}
+.weui_mask {
+  z-index: 99997;
+}
+.weui_dialog, .weui_toast {
+  z-index: 99999;
+}
+.weui-pull-to-refresh {
+  margin-top: 0;
+}

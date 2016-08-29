@@ -1,0 +1,91 @@
+.popup-channel {
+  @-webkit-keyframes zoomIn {
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3, .3, .3);
+      transform: scale3d(.3, .3, .3)
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  .clear:after {
+    clear: both;
+    display: block;
+    content: ' ';
+  }
+  h3 {
+    padding: 0 0.6rem;
+    font: normal 0.8rem/1.75rem "Microsoft YaHei";
+    background-color: #fff;
+    margin: 0;
+    color: #0d5ebd;
+    position: relative;
+    i.icon-close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1.75rem;
+      height: 1.75rem;
+      background: url(../../img/icon-close.png) no-repeat center;
+      background-size: 14px;
+      cursor: pointer;
+    }
+  }
+  h4 {
+    font: normal 0.6rem/1.25rem "Microsoft YaHei";
+    background-color: #f2f2f2;
+    margin: 0;
+    color: #333;
+    padding: 0 0.6rem;
+    &.red {
+      color: red;
+    }
+  }
+  ul {
+    margin: 20px 0 10px 0;
+    padding: 0;
+    position: relative;
+    li {
+      float: left;
+      display: inline-block;
+      width: 25%;
+      margin-bottom: 10px;
+      -webkit-animation: zoomIn 300ms ease;
+      &.total a {
+        background-color: #EBEBEB;
+      }
+      a {
+        color: #333;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        margin: 0 5px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 32px;
+        display: block;
+      }
+    }
+  }
+  @media screen and (max-width: 350px) {
+    .weui-popup-modal li a.min-font {
+      font-size: 12px;
+      margin: 0 3px;
+    }
+  }
+
+  @media screen and (min-width: 351px) and (max-width: 430px) {
+    .weui-popup-modal li a.min-font {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .weui-popup-modal li a.middle-font {
+      font-size: 12px;
+    }
+  }
+}
+.popup-channel {
+  z-index: 1000;
+}

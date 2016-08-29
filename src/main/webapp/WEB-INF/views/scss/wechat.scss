@@ -1,0 +1,11 @@
+@import "base/common";
+@import "base/wechat-common";
+@import "util/variable";
+@import "util/mixin";
+
+
+@import "layout/grid";
+@import "module/column-popup";
+@import "page/index/wechat-news";
+@import "page/report/wechat-report";
+@import "page/detail/wechat-detail";
